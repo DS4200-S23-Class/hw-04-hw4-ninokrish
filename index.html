@@ -1,14 +1,71 @@
 <!DOCTYPE html>
-<html> 
-
-<head>
-    <meta charset=utf-8/>
-</head>
-
-
-<body>
-
-
-</body>
-
+<html>
+  <head>
+    <title>hw-04</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1 class="centered-header">hw-04: Event Handling</h2>
+      <!-- container to house left and right columns -->
+      <div class = 'container'>
+            <div class="left-column">
+                <svg id="axis">
+                    <!-- x axis -->
+                    <line x1="0" y1="500" x2="500" y2="500"/>
+                    <!-- y axis -->
+                    <line x1="0" y1="500" x2="0" y2="0"/>
+                    <!-- 4 starter points, 1 coord = 50px -->
+                    <circle cx="50" cy="400" r="10"/>
+                    <circle cx="100" cy="300" r="10"/>
+                    <circle cx="300" cy="400" r="10"/>
+                    <circle cx="450" cy="50" r="10"/>
+                </svg>
+            </div>
+    
+            <div class="right-column">
+                <span class = "selected" id="last_point_placeholder"></span>
+                <span class = "selected" id="actual_point"></span>
+                <form>
+                <label>Select the x coordinate of the point you want to add.</label>
+                    <!-- Drop down menus -->
+                  <select class = "selector" id="x-coordinate">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+                <br><br>
+                <label>Select the y coordinate for the point you want to add.</label>
+                  <select class = "selector" id="y-coordinate">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    </select>
+                <br><br>
+                <button type="button" class = "submit" id="submit">Add point</button>
+                </form>
+    
+            </div>
+    </div>
+    <h2 class="centered-header">Acknowledgements</h2>
+    <div id="container">
+      <ul>
+        <li>SVG tutorial at MDN web docs</li>
+        <li>W3Schools CSS tutorial</li>
+        <li>Advanced SVGs</li>
+      </ul>
+    </div>
+  </body>
 </html>

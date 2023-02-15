@@ -1,0 +1,82 @@
+body {
+    font-family: Arial;
+  }
+  
+  .centered-header {
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+  }
+  
+  .left-column {
+    width: 60%;
+    float: left;
+  }
+  
+  .right-column {
+    width: 40%;
+    float: right;
+  }
+
+  #axis {
+	width: 500px;
+	height: 500px;
+	margin-left: 100px;
+}
+
+line {
+	stroke: black;
+	stroke-width: 20;
+}
+
+circle:hover {
+	fill: purple;
+}
+circle {
+    fill: cyan;
+}
+.submit {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+select {
+background-color: white;
+  border: 1px solid #666;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 20px 8px 10px;
+  width: 100px;
+}
+/* cool styling for "selected" class */
+.selected {
+  color: black;
+  font-size: 20px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* class for when circles are clicked on */
+.highlightBorder {
+	stroke: palevioletred;
+	stroke-width: 2;
+}
